@@ -59,7 +59,3 @@ CHECK 6. Delete account
 
 0. Exit
 Exit program.
-
-
-AngFra
-MB=V4cbAqPz4vqmQ
