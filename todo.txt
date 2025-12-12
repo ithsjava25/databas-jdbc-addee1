@@ -1,0 +1,61 @@
+1. When starting program:
+Ask for:
+- Username:
+- Password:
+
+2. Checking if account exist in data table "account"
+ - if wrong - "Invalid username or password" -> program exit
+ - if OK - show menu
+
+3. Meny:
+    1 = List moon missions
+    2 = Get mission by id
+    3 = Count missions for year
+    4 = Create account
+    5 = Update account password
+    6 = Delete account
+    0 = Exit
+
+After each choise program should run the function
+Write the result or confirmation
+Show menu again
+
+List
+CHECK 1. Moon missions:
+- Select from moon_mission
+- Write name
+
+CHECK 2. Get Missions by Id
+- Select spacecraft FROM moon_mission WHERE mission_id = ?
+- Write mission id
+- Spacecraft name
+
+CHECK 3. Count missions by year
+- SELECT COUNT(*) FROM moon_missions WHERE launch_year = ?
+- Write 3 missions in ?
+
+CHECK 4. Create Account
+- Ask for:
+    - First name
+    - Last name
+    - SSN
+    - Password
+- INSER INTO account(password, first_name, last_name, ssn)
+VALUES (?,?,?,?)
+- Write Account created
+
+CHECK 5. Update account password
+- Ask for:
+    - user_id
+    - new password
+
+- UPDATE account SET password = ? WHERE user_id = ?
+- Write Password updated
+
+CHECK 6. Delete account
+- read:
+    - user_id
+- Write Account deleted
+
+0. Exit
+Exit program.
