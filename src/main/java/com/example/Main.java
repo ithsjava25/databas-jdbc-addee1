@@ -1,7 +1,5 @@
 package com.example;
-
 import javax.sql.DataSource;
-import java.io.IOException;
 import java.sql.*;
 import java.util.Arrays;
 import java.util.Scanner;
